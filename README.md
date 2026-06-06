@@ -2,7 +2,7 @@
 
 **End-to-end property valuation pipeline for real estate investment platforms**
 
-> Built for the specific use case of crowdfunding investment platforms (Upfund-style):
+> Built for the specific use case of crowdfunding investment platforms:
 > "Does this property deserve investor capital — and at what price?"
 
 ---
@@ -164,10 +164,10 @@ wget https://files.data.gouv.fr/geo-dvf/latest/csv/2024/departements/75.csv.gz
 
 | Role | Component |
 |------|-----------|
-| **Data Engineer** | DVF ingestion, deduplication pipeline, address normalisation |
-| **Data Scientist** | LightGBM quantile regression, feature engineering, confidence scoring, evaluation |
-| **Analytics Engineer** | DuckDB-compatible aggregation logic, market statistics layer |
-| **ML Engineer** | FastAPI endpoint (see `app/api/`), model serving architecture |
+| **Data Engineering** | DVF ingestion, deduplication pipeline, address normalisation |
+| **Data Science** | LightGBM quantile regression, feature engineering, confidence scoring, evaluation |
+| **Analytics Engineering** | DuckDB-compatible aggregation logic, market statistics layer |
+| **ML Engineering** | FastAPI endpoint (see `app/api/`), model serving architecture |
 | **GenAI** | LLM investment memo, structured prompt with grounding, template fallback |
 
 ---
@@ -223,5 +223,5 @@ property-intelligence-agent/
 Built an end-to-end property intelligence pipeline that combines
 DVF public transaction data, LightGBM quantile valuation models,
 and LLM-generated investment memos with explicit uncertainty quantification —
-designed for real estate crowdfunding platforms where explainability
+designed for real estate platforms where explainability
 and data confidence matter as much as prediction accuracy.
