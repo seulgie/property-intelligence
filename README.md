@@ -1,4 +1,4 @@
-# Property Intelligence Agent
+# Property Intelligence
 
 **End-to-end property valuation pipeline for real estate investment platforms**
 
